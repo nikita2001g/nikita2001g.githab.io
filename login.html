@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Войти на сайт - Linkin&nbsp;Park</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicon-32.ico" sizes="32x32">
+	<meta name="msapplication-TileImage" content="img/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) { 
+	    $(window).on('resize', function(){
+			var snap_w = $('.snap-drawers').width();
+		});
+			var snap_w = $('.snap-drawers').width();
+			$('.snap-drawers').css('left', -snap_w);
+
+		 $("#toolbar").click(function () {
+			$('#menu_fon').fadeIn(0);
+			$('.snap-drawers').fadeIn(0).css('left', '0');
+			$('#full_content').addClass('content_block');
+			
+			window.scrollBy(0, 0);
+		});
+		$('#menu_fon').click(function () {
+			$('#menu_fon').fadeOut(0);
+			var snap_w = $('.snap-drawers').width();
+			$('.snap-drawers').css('left', -snap_w);
+			$('#full_content').removeClass('content_block');
+		});
+	});
+		
+	</script>
+</head>
+<body>
+	<div class="mycontent">
+		<div class="snap_content">
+			<div class="container">
+				<div class="wrapper">
+					<div id="page_content">
+						<header class=" top">
+							<div class="grid">
+								<div class="col-3-12">
+									<a href="index.html" class="logo"><span></span></a>
+								</div>
+								<div class="col-9-12">
+									<nav>
+										<menu>
+											<li><a href="index.html">Главная</a></li>
+											<li>
+												<a href="about.html">О группе</a>
+												<ul>
+													<li><a href="discography.html">Дискография</a></li>
+													<li><a href="albums.html">Альбомы</a></li>
+												</ul>
+											</li>
+											<li><a href="video.html">Видео</a></li>
+											<li><a href="login.html">Вход</a></li>
+											<li><a href="register.html">Регистрация</a></li>
+										</menu>
+									</nav>
+								</div>
+							</div>
+						</header>
+						<section id="content" class="login_page">
+							<div class="grid">
+								<article class="col-9-12 ">
+									<header>
+										<h1>Вход на сайт</h1>
+									</header>
+									<div class="content">
+										<form action="send.php">
+											<input type="email" placeholder="Введите Email" required><br>
+											<input type="password" placeholder="Введите пароль" required><br>
+											<input type="submit" value="Вход">
+										</form>
+									</div>
+								</article>
+							</div>
+						</section>
+					</div>
+					<footer>
+						<div class="grid grid-pad">
+                            <div class="footer-content">
+                                <img height="auto" width="200px" src="img/logo.png" alt="Linkin&nbsp;Park">
+                            </div>
+						    <div class="sub_footer">
+                                <b>Горбунов Никита © 2019</b>		
+						    </div>
+					    </div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="menu_fon"></div>
+	<div class="mobile_menu">
+		<div id="toolbar">
+	        <a href="#" id="open-left"></a>
+		</div>
+		<div class="snap-drawers">
+			<div class="snap-drawer">
+				<nav>
+					<menu>
+						<li><a href="index.html">Главная</a></li>
+						<li>
+							<a href="about.html">О группе</a>
+							<ul>
+				            	<li><a href="discography.html">Дискография</a></li>
+				            	<li><a href="albums.html">Альбомы</a></li>
+				            </ul>
+						</li>
+						<li><a href="video.html">Видео</a></li>
+						<li><a href="login.html">Вход</a></li>
+						<li><a href="register.html">Регистрация</a></li>
+					</menu>
+				</nav>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

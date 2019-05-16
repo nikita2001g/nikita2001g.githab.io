@@ -1,0 +1,165 @@
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption,
+menu
+{
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+	text-align: left;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}body
+{
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+
+}ol,
+ul,
+dl
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+
+blockquote:before,
+q:before,
+blockquote:after,
+q:after {
+    font-size: 75px;
+    line-height: 45px;
+    position: absolute;
+}
+
+blockquote:before,
+q:before
+{
+    content: '\201c';
+    left: 0;
+}
+blockquote:after,
+q:after {
+    content: '\201d';
+    right: 15px;
+}
+
+blockquote {
+    position: relative;
+    padding: 6px 48px 6px 96px;
+    margin: 18px 0;
+    font-size: 22px;
+    line-height: 1.5;
+    display: block;
+    font-weight: bold;
+}
+:focus
+{
+    outline: 0;
+}ins
+{
+    text-decoration: none;
+}del
+{
+    text-decoration: line-through;
+}table,
+table td
+{
+    border-collapse: collapse;
+}a img,
+img a
+{
+    max-width: 100%;
+
+    border: none;
+}.entry-content table a img
+{
+    min-width: inherit;
+    max-width: inherit;
+}a:active
+{
+    outline: none;
+}a:focus
+{
+    -moz-outline-style: none;
+}.clear
+{
+    clear: both;
+
+    width: 100%;
+    height: 1px;
+}.clearfix
+{
+    *zoom: 1;
+}.clearfix:before,
+.clearfix:after
+{
+    display: table;
+
+    content: '';
+}.clearfix:after
+{
+    clear: both;
+}

@@ -1,0 +1,257 @@
+@media only screen and (max-width: 850px) {
+	
+nav {
+	display: none;
+}
+
+footer  {
+	margin: 0 auto;
+	padding: 30px 0;
+	.content {
+		padding: 0;
+		margin: 0;
+		background: none;
+	}
+	overflow-wrap: normal;  /* не поддерживает IE, Firefox; является копией word-wrap */ 
+  word-wrap: normal;
+  word-break: normal;  /* не поддерживает Opera12.14, значение keep-all не поддерживается IE, Chrome */ 
+  line-break: auto;  /* нет поддержки для русского языка */ 
+  hyphens: manual; 
+}
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=submit] {
+	display: block;
+	margin: 5px auto;
+}
+body >header {
+	position: relative;
+}
+
+
+}
+
+@media screen and (min-width: 800px) and (max-width: 1130px) {
+	footer {
+
+		background: #5b5b5a;
+	}
+	nav {
+		max-width: 90%;
+		li {
+			a {
+				font-size: 16px;
+				padding: 15px 10px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 900px) {	
+	
+	body{
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.wrapper {
+			display: block;
+			height: auto;
+			#page_content {
+				display: block;
+				height: auto;
+			} 
+		}
+		header.top.has_slider {
+			position: relative;
+		}
+		header.top .logo{
+		text-align: center;
+		margin: auto auto;
+		display: block;
+		}
+		header.top nav {
+			display: none;
+		}
+		header  .col-3-12 {
+			margin: 0 auto 10px;
+		}
+	}
+
+
+	#content {
+		aside {
+
+			.left_menu {
+				display: block;
+				margin: 0 auto 30px;
+				width: 100%
+			}
+		}
+		article {
+			header {
+
+				h1 {
+					text-align: center;
+				}
+			}
+		}
+		
+	}
+	#slider {
+		.bx-wrapper .bx-pager,
+		.bx-wrapper .bx-controls-auto {
+	    position: absolute;
+	    bottom: -26px;
+	    width: 100%;
+		}
+	}
+	.social_icon {
+		display: table;
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.mycontent {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    width: auto;
+	    height: auto;
+	    .snap_content {
+			background: #ffffff;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    bottom: 0;
+		    left: 0;
+		    width: auto;
+		    height: auto;
+		    z-index: 2;
+		    overflow: auto;
+		    -webkit-overflow-scrolling: touch;
+		    -webkit-transform: translate3d(0, 0, 0);
+		    -moz-transform: translate3d(0, 0, 0);
+		    -ms-transform: translate3d(0, 0, 0);
+		    -o-transform: translate3d(0, 0, 0);
+		    transform: translate3d(0, 0, 0);
+		    .container {
+			    position: fixed;
+			    visibility: visible;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    overflow: auto;
+			    z-index: 1003;
+			    width: 100%;
+			    height: 100%;
+			    transform: translateZ(0);
+
+			}
+		}
+	}
+	.snap-drawers {
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    user-select: none;
+	    -o-user-select: none;
+	    -khtml-user-select: none;
+	    position: fixed;
+	    z-index: 100000;
+	    top: 0;
+	    width: 80%;
+	    max-width: 410px;
+	    margin: 0;
+	    padding: 0;
+	    left: 0;
+	    height: 100%;
+	    bottom: 0;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition-duration: 0.3s;
+	    -webkit-transition-duration: 0.3s;
+	    -o-transition-duration: 0.3s;
+	    -moz-transition-duration: 0.3s;
+	    background: #fff;
+	    .snap-drawer {
+	    	display: block;
+			padding: 10px 20px;
+	    	nav {
+	    		display: block;
+
+					li {
+						list-style: none;
+						margin: 0;
+						a {
+							padding: 15px 20px;
+							text-decoration: none;
+							border-bottom: 1px solid #ccc;
+							width: 100%;
+							display: block;
+							transition: all .2s ease-out;
+							color: #000;
+						}
+						a:hover {
+							color:  #000;
+						}
+						ul {
+							margin-left: 20px;
+						}
+					}
+					li:last-child {
+
+						a{
+							border: 0;
+						}
+					}
+
+	    	}
+	    }
+	}
+	#toolbar {
+	    -webkit-user-select: none;
+	    -moz-user-select: none;
+	    user-select: none;
+	    -o-user-select: none;
+	    -khtml-user-select: none;
+	    display: block;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    width: 60px;
+	    height: 60px;
+	    z-index: 1004;
+		#open-left {
+		    background: #000 url(../img/open.png) center center no-repeat;
+		    background-size: 30px;
+		    display: block;
+		    width: 60px;
+		    height: 60px;
+		    cursor: pointer;
+		}
+		#open-left-text {
+		    margin: 0;
+		    color: #FFF;
+		    line-height: 44px;
+		    text-align: center;
+		    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.8);
+		    position: absolute;
+		    top: 0;
+		    right: 44px;
+		    left: 44px;
+		    width: auto;
+		    height: 44px;
+		}
+	}
+
+	.modal_overlay  .modal_window {
+		width: 80%;
+		max-width: 600px;
+		left: auto;
+		margin: 0 10% 30px;
+		top: 10%;
+	}
+}

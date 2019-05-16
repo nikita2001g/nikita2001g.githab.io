@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Главная - Linkin&nbsp;Park</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/favicon-32.ico" sizes="32x32">
+	<meta name="msapplication-TileImage" content="img/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon-144.png">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	
+</head>
+<body>
+	<div class="mycontent">
+		<div class="snap_content">
+			<div class="container">
+				<div class="wrapper">
+					<div id="page_content">
+						<header class="has_slider top">
+							<div class="grid">
+								<div class="col-3-12">
+									<a href="index.html" class="logo"><span></span></a>
+								</div>
+								<div class="col-9-12">
+									<nav>
+										<menu> 
+											<li><a href="index.html">Главная</a></li>
+											<li>
+												<a href="about.html">О группе</a>
+												<ul>
+													<li><a href="discography.html">Дискография</a></li>
+													<li><a href="albums.html">Альбомы</a></li>
+												</ul>
+											</li>
+											<li><a href="video.html">Видео</a></li>
+											<li><a href="login.html">Вход</a></li>
+											<li><a href="register.html">Регистрация</a></li>
+										</menu>
+									</nav>
+								</div>
+							</div>
+						</header>
+						<section id="slider">
+							<ul class="bxSlider">
+								<li><img src="img/slider/1.jpg" alt=""></li>
+								<li><img src="img/slider/2.jpg" alt=""></li>
+								<li><img src="img/slider/3.jpg" alt=""></li>
+							</ul>
+						</section>
+						<section id="content">
+							<div class="grid">
+								
+								<article class="col-8-12">
+									<header>
+										<h1>Linkin&nbsp;Park</h1>
+
+									</header>
+									<div class="content">
+									<img src="img/5.jpg" alt="">
+                                        <p>Название группы Linkin&nbsp;Park знакомо даже тем, кто ничего не знает об американской рок-музыке. Их альбомы получали статусы золотых и платиновых, а каждая пластинка была экспериментом с новыми жанрами и стилями. Смерть солиста не оборвала творчество Linkin&nbsp;Park, по крайней мере, оставшиеся участники утверждают, что на группе рано ставить крест.</p>
+									</div>
+								</article>
+								<aside class="col-4-12">
+									<div class="left_menu">
+										<form action="search.php" id="search">
+											<input type="text" placeholder="Что вы хотите найти?">
+											<input type="submit" value="Искать">
+										</form>
+									</div>
+									<div class="left_menu">
+										<ul class="nav">
+											<li>
+												<a href="about.html">О группе</a>
+												<ul>
+													<li><a href="discography.html">Дискография</a></li>
+													<li><a href="albums.html">Альбомы</a></li>
+												</ul>
+											</li>
+											<li><a href="video.html">Видео</a></li>
+											<li><a href="sitemap.html">Карта сайта</a></li>
+											<li><a href="#" class="openmodal">Информация для посетителей</a></li>
+										</ul>
+									</div>
+								</aside>
+							</div>
+						</section>
+					</div>
+					<footer>
+						<div class="grid grid-pad">
+                            <div class="footer-content">
+                                <img height="auto" width="200px" src="img/logo.png" alt="Linkin&nbsp;Park">
+                            </div>
+						    <div class="sub_footer">
+                                <b>Горбунов Никита © 2019</b>		
+						    </div>
+					    </div>
+					</footer>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div id="menu_fon"></div>
+		<div class="modal_overlay">
+			<div class="modal_window modal_window1">
+				<div class="modal_close">X</div>
+				<div class="modal_body">
+					<div class="modal_title">Информация для посетителей</div>
+					<div class="modal_content">Сайт имеет исключительно ознакомительный характер. Все права принадлежат Linkin&nbsp;Park.</div>
+				</div>
+			</div>
+		</div>
+	<div class="mobile_menu">
+		<div id="toolbar">
+	        <a href="#" id="open-left"></a>
+		</div>
+		<div class="snap-drawers">
+			<div class="snap-drawer">
+				<nav>
+					<menu>
+						<li><a href="index.html">Главная</a></li>
+						<li>
+							<a href="about.html">О группе</a>
+							<ul>
+                            	<li><a href="discography.html">Дискография</a></li>
+                            	<li><a href="albums.html">Альбомы</a></li>
+                            </ul>
+						</li>
+						<li><a href="video.html">Видео</a></li>
+						<li><a href="login.html">Вход</a></li>
+						<li><a href="register.html">Регистрация</a></li>
+					</menu>
+				</nav>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
+	<script>
+	jQuery(document).ready(function($) { 
+	    $('.bxSlider').bxSlider({
+			  captions: false,
+			  auto: true
+			});
+	    $("body .openmodal").on('click',  function() {
+	    	$("body .modal_overlay").fadeIn(0);
+			$("body .modal_window1").fadeIn(0);
+			$("body #menu_fon").fadeIn(0);
+			$("body").addClass("modal_open");
+			return false
+		});
+	    	
+	    $("body .modal_window1 .modal_close, body #menu_fon").on('click', function() {
+	    	$("body .modal_overlay").fadeOut(0);
+	    	$("body .modal_window1").fadeOut(0);
+			$("body #menu_fon").fadeOut(0);
+			$("body").removeClass("modal_open");
+			return false
+	    });
+	    $(window).on('resize', function(){
+			var snap_w = $('.snap-drawers').width();
+		});
+			var snap_w = $('.snap-drawers').width();
+			$('.snap-drawers').css('left', -snap_w);
+
+		 $("#toolbar").click(function () {
+			$('#menu_fon').fadeIn(0);
+			$('.snap-drawers').fadeIn(0).css('left', '0');
+			$('#full_content').addClass('content_block');
+			
+			window.scrollBy(0, 0);
+		});
+		$('#menu_fon').click(function () {
+			$('#menu_fon').fadeOut(0);
+			var snap_w = $('.snap-drawers').width();
+			$('.snap-drawers').css('left', -snap_w);
+			$('#full_content').removeClass('content_block');
+		});
+	});
+		
+	</script>
+</body>
+</html>
